@@ -16,7 +16,7 @@ class RegistrationForm():
         # create qml qguiapplication
         self.app = QGuiApplication(sys.argv)
 
-        # instance from QtQuick engine
+        # instance from QtQuick engine 
 
         self.engine = QQmlApplicationEngine()
         self.engine_context = self.engine.rootContext()

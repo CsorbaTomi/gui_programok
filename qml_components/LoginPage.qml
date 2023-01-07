@@ -7,6 +7,7 @@ import "widgets"
 
 
  ColumnLayout{
+            id: "column"
             spacing: 50
                     Rectangle{
                             color: "red"
@@ -26,8 +27,8 @@ import "widgets"
                     
                     Rectangle{
                         id: login
-                            width: 800
-                            height: 400
+                            width: 600
+                            height: 376
                             color: "lightgreen"
                             radius: 20                      
                             Layout.alignment: Qt.AlignHCenter
@@ -60,8 +61,13 @@ import "widgets"
                                                     border.color: "#26282a"
                                                     border.width: 1
                                                     radius: 20
-                                                    
                                                     }
+                                        onClicked: console.log("Login/Belépés")
+                                            // MouseArea {
+                                            //             id: buttonmousearea
+                                            //             anchors.fill: parent
+                                            //             onClicked: console.log("Login/Belépés")
+                                            //         }
                                     
                                }
                             
