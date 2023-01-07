@@ -10,6 +10,10 @@ APP_ROOT = os.path.dirname(__file__)
 MAIN_QML = os.path.join(APP_ROOT, "main.qml")
 QQuickStyle.setStyle("Material")
 
+class UserDataSaver(QObject):
+    @Slot(str, str, str, str, str, str)
+    def save_data(self, macname, tmone, tmtwo, tmthree, tmplc, kwh):
+        print("PYTHON:", macname, tmone, tmtwo, tmthree, tmplc, kwh)
 
 class RegistrationForm():
     def __init__(self):
@@ -20,6 +24,9 @@ class RegistrationForm():
 
         self.engine = QQmlApplicationEngine()
         self.engine_context = self.engine.rootContext()
+
+        self.user_data_saver = UserDataSaver()
+        self.engine_context.setContextProperty("UserDataSaver", self.user_data_saver)
 
 
         # load .qml file

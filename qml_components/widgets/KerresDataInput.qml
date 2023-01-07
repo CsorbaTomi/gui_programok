@@ -14,6 +14,7 @@ ColumnLayout{
                 anchors.fill: parent
                 anchors.margins: 10
        Text{
+            id: macname
             Layout.alignment : Qt.AlignHCenter
             text: machinename
             font.pixelSize: 35
@@ -22,27 +23,32 @@ ColumnLayout{
             }
 
     TextField{
+        id: tmone
         placeholderText: "TM1 hőmérséklete"
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
         onAccepted: print(text)
         }
     TextField{
+        id: tmtwo
         placeholderText: "TM2 hőmérséklete"
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
         }
     TextField{
+        id: tmthree
         placeholderText: "TM3 hőmérséklete"
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
         }
     TextField{
+        id: tmplc
         placeholderText: "PLC hőmérséklete"
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
         }
     TextField{
+        id: kwh
         placeholderText: "KWH"
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
@@ -52,6 +58,26 @@ ColumnLayout{
         text:"Bevitel"
         Layout.alignment : Qt.AlignHCenter
         font_size: 35
+        onClicked:{
+
+        UserDataSaver.save_data(
+            macname.text,
+            tmone.text,
+            tmtwo.text,
+            tmthree.text,
+            tmplc.text,
+            kwh.text
+        )
+
+            
+            tmone.text = ""
+            tmtwo.text = ""
+            tmthree.text = ""
+            tmplc.text = ""
+            kwh.text = ""
+
+
+        }
     }
 }
 }
