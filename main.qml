@@ -58,7 +58,7 @@ ColumnLayout{
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             UserEntry{}
-            DateTime{Layout.leftMargin: 10}
+            DateTime{}
             }
         }
     

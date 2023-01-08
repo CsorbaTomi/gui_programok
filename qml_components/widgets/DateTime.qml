@@ -13,7 +13,6 @@ Item{
             onTriggered: time.text = new Date().toLocaleString(Qt.locale("hu_HU"), "yyyy-MM-dd hh:mm:ss")
         }
         Text{
-
             id: time
             font.pixelSize: 25
             font.bold: true
