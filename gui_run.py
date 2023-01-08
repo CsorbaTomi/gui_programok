@@ -11,7 +11,7 @@ MAIN_QML = os.path.join(APP_ROOT, "main.qml")
 QQuickStyle.setStyle("Material")
 
 class UserDataSaver(QObject):
-    @Slot(str, str, str, str, str, str)
+    @Slot(str, int, int, int, int, int)
     def save_data(self, macname, tmone, tmtwo, tmthree, tmplc, kwh):
         print("PYTHON:", macname, tmone, tmtwo, tmthree, tmplc, kwh)
 

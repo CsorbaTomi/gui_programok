@@ -12,7 +12,7 @@ ApplicationWindow{
     title: "Machines"
     visible: true
     width: 1300
-    height: 710
+    height: 750
 
     Material.theme: Material.Light
     Material.accent: Material.LightBlue
@@ -42,13 +42,26 @@ ColumnLayout{
 
     ]
 
-
+ColumnLayout{
     Rectangle {
         id: titlebar
         Layout.alignment: Qt.AlignCenter
         Layout.preferredWidth: app.width
         Layout.preferredHeight: 100
         Title{}
+    }
+        Rectangle{
+            Layout.alignment: Qt.AlignCenter
+            Layout.preferredWidth: app.width
+            Layout.preferredHeight: 25
+            RowLayout{
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            UserEntry{}
+            DateTime{Layout.leftMargin: 10}
+            }
+        }
+    
     }
 
     Rectangle{
