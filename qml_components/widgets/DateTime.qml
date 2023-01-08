@@ -4,8 +4,6 @@ import QtQuick.Layouts 1.15
 
 
 Item{
-
-    property var time: String
     id: datetime
 
         Timer{
@@ -17,7 +15,6 @@ Item{
         Text{
 
             id: time
-            text: time
             font.pixelSize: 25
             font.bold: true
             color: "#add3dc"
