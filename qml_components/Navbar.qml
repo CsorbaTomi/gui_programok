@@ -32,6 +32,14 @@ Item{
             onClicked: app_layout.state = "shiftchange"
             
         }
+
+        TextButton{
+            text: "Gépek"
+            font_size: 25
+            Layout.alignment : Qt.AlignHCenter
+            onClicked: app_layout.state = "machinelayout"
+            
+        }
         }
     }
 }

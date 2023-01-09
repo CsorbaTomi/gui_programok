@@ -38,6 +38,14 @@ ColumnLayout{
                 target: shiftchange
                 visible: true
             }
+        },
+
+        State{
+            name: "machinelayout"
+            PropertyChanges{
+                target: machinelayout
+                visible: true
+            }
         }
 
     ]
@@ -83,6 +91,7 @@ ColumnLayout{
 
                         StatePage{id: statepage; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
                         ShiftChange{id: shiftchange; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
+                        MachineLayout{id: machinelayout; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
 
                         }
                     }
