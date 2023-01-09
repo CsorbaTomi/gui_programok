@@ -13,6 +13,7 @@ ColumnLayout{
                 spacing: 5
                 anchors.fill: parent
                 anchors.margins: 10
+        DateTime{}
        Text{
             id: macname
             Layout.alignment : Qt.AlignHCenter
@@ -66,7 +67,8 @@ ColumnLayout{
             tmtwo.text,
             tmthree.text,
             tmplc.text,
-            kwh.text
+            kwh.text,
+            new Date().toLocaleString(Qt.locale("hu_HU"), "yyyy-MM-dd hh:mm:ss")
         )
 
             

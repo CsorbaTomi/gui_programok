@@ -13,7 +13,7 @@ Item{
                             
             Text{
                 text: "WTCR ADAT RÖGZÍTŐ ÉS MEGJELENÍTŐ"
-                font.pixelSize: 65
+                font.pixelSize: 60
                 font.bold: true
                 color: "#add3dc"
                 anchors.horizontalCenter: parent.horizontalCenter

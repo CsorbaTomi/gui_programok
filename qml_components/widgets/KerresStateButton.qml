@@ -18,7 +18,7 @@ ColumnLayout{
        Text{
             Layout.alignment : Qt.AlignHCenter
             text: machinename
-            font.pixelSize: 35
+            font.pixelSize: 30
             font.bold: true
             color: "gray"
             }

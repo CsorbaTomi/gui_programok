@@ -12,27 +12,27 @@ RowLayout{
 
 RectangleBasic{
     color: "white"
-                    StatePageButton{
+                    KerresStateButton{
                         machinename: "60 Kerres 200"
                         }
                 
                     } 
 RectangleBasic{
     color: "white"
-                    StatePageButton{machinename: "61 Kerres 200"
+                    KerresStateButton{machinename: "61 Kerres 200"
                         }
                 
                     } 
 RectangleBasic{
     color: "white"
-                    StatePageButton{
+                    KerresStateButton{
                         machinename: "62 Kerres"
                         }
                 
                     } 
 RectangleBasic{
     color: "white"
-                    StatePageButton{
+                    IncroStateButton{
                         machinename: "66 INCRO"
                         }
                 

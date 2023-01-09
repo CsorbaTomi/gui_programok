@@ -3,6 +3,7 @@ from PySide2.QtQml import QQmlApplicationEngine
 from PySide2.QtGui import QGuiApplication
 from PySide2.QtQuickControls2 import QQuickStyle
 from PySide2.QtCore import QObject, Slot
+from py_components.importdata import *
 
 
 
@@ -10,10 +11,6 @@ APP_ROOT = os.path.dirname(__file__)
 MAIN_QML = os.path.join(APP_ROOT, "main.qml")
 QQuickStyle.setStyle("Material")
 
-class UserDataSaver(QObject):
-    @Slot(str, int, int, int, int, int)
-    def save_data(self, macname, tmone, tmtwo, tmthree, tmplc, kwh):
-        print("PYTHON:", macname, tmone, tmtwo, tmthree, tmplc, kwh)
 
 class RegistrationForm():
     def __init__(self):
@@ -24,8 +21,10 @@ class RegistrationForm():
 
         self.engine = QQmlApplicationEngine()
         self.engine_context = self.engine.rootContext()
-
+        my_name = os.getlogin()
         self.user_data_saver = UserDataSaver()
+        
+        self.engine_context.setContextProperty("UserName", my_name)
         self.engine_context.setContextProperty("UserDataSaver", self.user_data_saver)
 
 

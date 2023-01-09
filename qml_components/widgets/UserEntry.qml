@@ -13,7 +13,7 @@ import QtQuick.Controls.Material 2.12
             font.pixelSize: 25
                 font.bold: true
                 color: "#add3dc"
-            text: "Felhasználó: " + "CTA6HtV "
+            text: "Felhasználó: " + UserName
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter : parent.verticalCenter            
         }
