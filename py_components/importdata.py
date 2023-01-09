@@ -12,10 +12,3 @@ class UserDataSaver(QObject):
         print("PYTHON:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime)
 
     
-    def login_name_data(self):
-        return os.getlogin()
-
-
-if __name__ == "__main__":
-    pass
-    
