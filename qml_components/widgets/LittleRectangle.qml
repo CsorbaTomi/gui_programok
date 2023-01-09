@@ -2,7 +2,7 @@ import QtQuick 2.15
 import QtQuick.Layouts 1.15
 
 Rectangle{
-    id: recta
+    id: littlerect
     width: 125
     height: 200
     color: "#add3dc"

@@ -7,24 +7,81 @@ import "widgets"
 Item{
 
 GridLayout{
-      columns: 3
+      columns: 2
 
 
 LittleRectangle{
     color: "white"
-
-            TextButton{
+                TextButton{
             text: "Test1"
             font_size: 25
-            Layout.alignment : Qt.AlignHCenter}
+            anchors.centerIn: parent}
+    GridLayout{
+        columns:2
+        Rectangle{
+            border.color: "black"
+            border.width: 1
+            color: "transparent"
+            width: 60
+            height: 100
+
+            TextButton{
+                text: "Valami"
+                font_size:10
+                anchors.centerIn: parent
+            }
+        }
+        Rectangle{
+            border.color: "black"
+            border.width: 1
+            color: "transparent"
+            width: 60
+            height: 100
+
+            TextButton{
+                text: "Valami1"
+                font_size:10
+                anchors.centerIn: parent
+            }
+        }
+        Rectangle{
+            border.color: "black"
+            border.width: 1
+            color: "transparent"
+            width: 60
+            height: 100
+
+            TextButton{
+                text: "Valami2"
+                font_size:10
+                anchors.centerIn: parent
+            }
+        }
+        Rectangle{
+            border.color: "black"
+            border.width: 1
+            color: "transparent"
+            width: 60
+            height: 100
+
+            TextButton{
+                text: "Valami3"
+                font_size:10
+                anchors.centerIn: parent
+            }
+        }
+
+
                 
-                    } 
+                    }
+} 
 LittleRectangle{
     color: "white"
                 TextButton{
             text: "Test2"
             font_size: 25
-            Layout.alignment : Qt.AlignHCenter}
+            anchors.centerIn: parent
+            }
 
                 
                     } 
@@ -33,7 +90,7 @@ LittleRectangle{
                 TextButton{
             text: "Test3"
             font_size: 25
-            Layout.alignment : Qt.AlignHCenter}
+            anchors.centerIn: parent}
 
                 
                     } 
@@ -42,9 +99,11 @@ LittleRectangle{
                 TextButton{
             text: "Test4"
             font_size: 25
-            Layout.alignment : Qt.AlignHCenter}
+            anchors.centerIn: parent}
 
                 
-                    } 
+                    }
+
 }
 }
+
