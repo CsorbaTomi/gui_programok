@@ -21,10 +21,11 @@ class RegistrationForm():
 
         self.engine = QQmlApplicationEngine()
         self.engine_context = self.engine.rootContext()
-        my_name = os.getlogin()
-        self.user_data_saver = UserDataSaver()
         
-        self.engine_context.setContextProperty("UserName", my_name)
+        self.user_data_saver = UserDataSaver()
+        self.data_upload = DataUpload()
+        
+        self.engine_context.setContextProperty("DataUpload", self.data_upload)
         self.engine_context.setContextProperty("UserDataSaver", self.user_data_saver)
 
 
