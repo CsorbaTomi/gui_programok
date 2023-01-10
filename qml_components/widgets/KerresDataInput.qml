@@ -51,6 +51,7 @@ ColumnLayout{
     TextField{
         id: kwh
         placeholderText: "KWH"
+        validator: IntValidator 
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
         }
@@ -68,7 +69,8 @@ ColumnLayout{
             tmthree.text,
             tmplc.text,
             kwh.text,
-            new Date().toLocaleString(Qt.locale("hu_HU"), "yyyy-MM-dd hh:mm:ss")
+            new Date().toLocaleString(Qt.locale("hu_HU"), "yyyy-MM-dd hh:mm:ss"),
+            DataUpload.login_name
         )
 
             

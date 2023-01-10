@@ -7,14 +7,14 @@ class UserDataSaver(QObject):
         super().__init__()
         self._get_entry_user = f"{os.getlogin()}"
 
-    @Slot(str, str, str, str, str, str, str)
-    def save_data(self, macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime):
+    @Slot(str, str, str, str, str, str, str, str)
+    def save_data(self, macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime, user):
         if macname == "60 Kerres 200":
-            print("PYTHON1:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime)
+            print("PYTHON1:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime, user)
         elif macname == "61 Kerres 200":
-            print("PYTHON1:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime)
+            print("PYTHON1:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime, user)
         elif macname == "62 Kerres":
-            print("PYTHON1:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime)
+            print("PYTHON1:", macname, tmone, tmtwo, tmthree, tmplc, kwh, datetime, user)
 
 
 class DataUpload(QObject):
@@ -29,9 +29,3 @@ class DataUpload(QObject):
         return os.getlogin()
 
     login_name = Property(str, login_data, notify=upload_data)
-    
-    
-
-x = DataUpload()
-
-print(x.login_name)
