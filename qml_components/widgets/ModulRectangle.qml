@@ -3,8 +3,8 @@ import QtQuick.Layouts 1.15
 
 Rectangle{
     id: littlerect
-    width: 125
-    height: 200
+    width: 90
+    height: 180
     color: "#add3dc"
     radius: 10
     // border.color: "black"

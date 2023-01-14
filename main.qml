@@ -12,7 +12,7 @@ ApplicationWindow{
     title: "Machines"
     visible: true
     width: 1300
-    height: 750
+    height: 800
 
     Material.theme: Material.Light
     Material.accent: Material.LightBlue
@@ -81,18 +81,16 @@ ColumnLayout{
                 spacing: 10
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-                        Navbar{}
-
-
-            ColumnLayout{
-                spacing: 10
-                Layout.fillHeight: true
-                Layout.fillWidth: true
+                        Navbar{id: navbar}
+                        
+                        Rectangle{
+                            height: 400
+                            width: app.width - navbar.width
+                            color: "#d2eef7"
 
                         StatePage{id: statepage; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
                         ShiftChange{id: shiftchange; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
                         MachineLayout{id: machinelayout; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
-
                         }
                     }
             }

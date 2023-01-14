@@ -4,9 +4,8 @@ import QtQuick.Layouts 1.15
 import QtQuick.Controls.Material 2.12
 import "widgets"
 
-Item{
-    implicitWidth: 250
-    RectangleBasic{
+
+RectangleBasic{
         ColumnLayout{
             anchors.horizontalCenter: parent.horizontalCenter
 
@@ -42,4 +41,3 @@ Item{
         }
         }
     }
-}

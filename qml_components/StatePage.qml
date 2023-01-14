@@ -4,10 +4,12 @@ import QtQuick.Layouts 1.15
 import QtQuick.Controls.Material 2.12
 import "widgets"
 
-Item{
+
 
 RowLayout{
         spacing: 10
+        anchors.margins: 10
+        anchors.centerIn: parent
 
 
 RectangleBasic{
@@ -19,7 +21,8 @@ RectangleBasic{
                     } 
 RectangleBasic{
     color: "white"
-                    KerresStateButton{machinename: "61 Kerres 200"
+                    KerresStateButton{
+                        machinename: "61 Kerres 200"
                         }
                 
                     } 
@@ -37,5 +40,4 @@ RectangleBasic{
                         }
                 
                     } 
-}
 }

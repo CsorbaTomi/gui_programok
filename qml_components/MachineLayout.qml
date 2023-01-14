@@ -4,106 +4,80 @@ import QtQuick.Layouts 1.15
 import QtQuick.Controls.Material 2.12
 import "widgets"
 
-Item{
 
-GridLayout{
-      columns: 2
+ColumnLayout{
+    id: machine_layout
+    anchors.horizontalCenter: parent.horizontalCenter
 
+    state: ""
 
-LittleRectangle{
-    color: "white"
-                TextButton{
-            text: "Test1"
-            font_size: 25
-            anchors.centerIn: parent}
-    GridLayout{
-        columns:2
-        Rectangle{
-            border.color: "black"
-            border.width: 1
-            color: "transparent"
-            width: 60
-            height: 100
+    states: [
+        State{
+            name: "kerressixty"
+            PropertyChanges{
+                target: kerressixty
+                visible: true
+            }
+            PropertyChanges{
+                target: one
+                bold_font: true
+            }
+        },
 
-            TextButton{
-                text: "Valami"
-                font_size:10
-                anchors.centerIn: parent
+        State{
+            name: "kerressixtyone"
+            PropertyChanges{
+                target: kerressixtyone
+                visible: true
+                }
+            PropertyChanges{
+                target: two
+                bold_font: true
+            }
+        },
+
+        State{
+            name: "kerressixtytwo"
+            PropertyChanges{
+                target: kerressixtytwo
+                visible: true
+            }
+            PropertyChanges{
+                target: three
+                bold_font: true
             }
         }
-        Rectangle{
-            border.color: "black"
-            border.width: 1
-            color: "transparent"
-            width: 60
-            height: 100
-
-            TextButton{
-                text: "Valami1"
-                font_size:10
-                anchors.centerIn: parent
+    ]  
+        
+    RowLayout{
+        Layout.bottomMargin: 30
+        Layout.alignment: Qt.AlignTop
+        TextButton{
+            id: one
+            Layout.rightMargin: 100
+            text: "Kerres 60"
+            font_size: 40
+            onClicked: machine_layout.state = "kerressixty"
             }
-        }
-        Rectangle{
-            border.color: "black"
-            border.width: 1
-            color: "transparent"
-            width: 60
-            height: 100
-
-            TextButton{
-                text: "Valami2"
-                font_size:10
-                anchors.centerIn: parent
+        TextButton{
+            id: two
+            Layout.rightMargin: 100
+            text: "Kerres 61"
+            font_size: 40
+            onClicked: machine_layout.state = "kerressixtyone"
             }
-        }
-        Rectangle{
-            border.color: "black"
-            border.width: 1
-            color: "transparent"
-            width: 60
-            height: 100
-
-            TextButton{
-                text: "Valami3"
-                font_size:10
-                anchors.centerIn: parent
+        TextButton{
+            id: three
+            Layout.rightMargin: 100
+            text: "Kerres 62"
+            font_size: 40
+            onClicked: machine_layout.state = "kerressixtytwo"
             }
-        }
+    }
 
+    Machine{id: kerressixty; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
+    Machine{id: kerressixtyone; Layout.fillHeight: true; Layout.fillWidth: true; visible: false}
+    Machine{id: kerressixtytwo; Layout.fillHeight: true; Layout.fillWidth: true; visible: false; vision: false}
 
-                
-                    }
-} 
-LittleRectangle{
-    color: "white"
-                TextButton{
-            text: "Test2"
-            font_size: 25
-            anchors.centerIn: parent
-            }
-
-                
-                    } 
-LittleRectangle{
-    color: "white"
-                TextButton{
-            text: "Test3"
-            font_size: 25
-            anchors.centerIn: parent}
-
-                
-                    } 
-LittleRectangle{
-    color: "white"
-                TextButton{
-            text: "Test4"
-            font_size: 25
-            anchors.centerIn: parent}
-
-                
-                    }
 
 }
-}
-

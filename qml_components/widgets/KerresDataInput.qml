@@ -51,7 +51,6 @@ ColumnLayout{
     TextField{
         id: kwh
         placeholderText: "KWH"
-        validator: IntValidator 
         Layout.fillWidth: true
         Layout.alignment : Qt.AlignHCenter
         }
