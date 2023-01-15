@@ -27,15 +27,19 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: wm1s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: wm1s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: wm1s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: wm1s3
                     doorname: "S3"
                 }
             }
@@ -56,9 +60,11 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: za1s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: za1s1
                     doorname: "S1"
                 }
         }
@@ -79,15 +85,19 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: wm2s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: wm2s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: wm2s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: wm2s3
                     doorname: "S3"
                 }
         }
@@ -108,9 +118,11 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: za2s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: za2s1
                     doorname: "S1"
                 }}
     } 
@@ -124,20 +136,25 @@ RowLayout{
                     anchors.horizontalCenter: parent.horizontalCenter
                     onClicked: modulname.text = "Modul neve: " + sm1.text
                 }
-        GridLayout{            columns:2
+        GridLayout{            
+            columns:2
             anchors.top: sm1.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: sm1s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: sm1s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: sm1s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: sm1s3
                     doorname: "S3"
                 }}
     }
@@ -159,9 +176,11 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: ns1s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: ns1s1
                     doorname: "S1"
                 }}
     } 
@@ -181,9 +200,11 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: za3s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: za3s1
                     doorname: "S1"
                 }}
     }
@@ -203,15 +224,19 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: za4s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: za4s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: za4s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: za4s3
                     doorname: "S3"
                 }}
     } 
@@ -231,15 +256,19 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: tm1s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: tm1s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: tm1s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: tm1s3
                     doorname: "S3"
                 }}
     } 
@@ -259,15 +288,19 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: tm2s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: tm2s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: tm2s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: tm2s3
                     doorname: "S3"
                 }}
     } 
@@ -287,15 +320,19 @@ RowLayout{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
                 DoorRectangle{
+                    id: tm3s2
                     doorname: "S2"
                 }
                 DoorRectangle{
+                    id: tm3s4
                     doorname: "S4"
                 }
                 DoorRectangle{
+                    id: tm3s1
                     doorname: "S1"
                 }
                 DoorRectangle{
+                    id: tm3s3
                     doorname: "S3"
                 }}
     } 
