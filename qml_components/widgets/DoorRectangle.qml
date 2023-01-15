@@ -5,7 +5,7 @@ Rectangle{
     property var doorname:String
             border.color: "black"
             border.width: 1
-            color: "transparent"
+            color: "white"
             width: 40
             height: 75
             radius: 10

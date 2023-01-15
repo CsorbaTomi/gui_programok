@@ -7,6 +7,7 @@ Text{
     property color active_color: "black"
     property int font_size: 16
     property bool bold_font: false
+    
 
     font.bold: root.bold_font
     font.pixelSize: root.font_size

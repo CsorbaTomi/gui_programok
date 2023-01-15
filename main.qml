@@ -46,6 +46,22 @@ ColumnLayout{
                 target: machinelayout
                 visible: true
             }
+            PropertyChanges{
+                target: info1
+                visible: false
+            }
+            PropertyChanges{
+                target: info2
+                visible: false
+            }
+            PropertyChanges{
+                target: info3
+                visible: false
+            }
+            PropertyChanges{
+                target: information
+                color: "lightsteelblue"
+            }
         }
 
     ]
@@ -102,19 +118,35 @@ ColumnLayout{
         color: "#e6f2f5"
         Layout.preferredWidth: app.width
         Layout.preferredHeight: 200
+
+        ColumnLayout{
+            Text{
+                id: machinename
+                font.pixelSize:25
+                text: "Gép neve: "
+            }
+            Text{
+                id: modulname
+                font.pixelSize:25
+            }
+        }
+
                 RowLayout{
                         spacing: 10 
 
                             Information{
+                                id: info1
                                 Layout.preferredWidth: app.width / 3
                                 }
 
                             Information{
+                                id: info2
                                 Layout.leftMargin: 10
                                 Layout.preferredWidth: app.width / 3
                                 }
 
                             Information{
+                                id: info3
                                 Layout.leftMargin: 10
                                 Layout.preferredWidth: app.width / 3
                                 }

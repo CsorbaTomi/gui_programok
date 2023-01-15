@@ -19,6 +19,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + wm1.text, modulwm1.color = "red"
                 }
         GridLayout{
             columns:2
@@ -47,6 +48,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + za1.text
                 }
         GridLayout{            
             columns:1
@@ -69,6 +71,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + wm2.text
                 }
         GridLayout{
             columns:2
@@ -97,6 +100,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + za2.text
                 }
         GridLayout{            
             columns:1
@@ -118,6 +122,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + sm1.text
                 }
         GridLayout{            columns:2
             anchors.top: sm1.bottom
@@ -146,6 +151,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + ns1.text
                 }
         GridLayout{            
             columns:1
@@ -167,6 +173,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + za3.text
                 }
         GridLayout{            
             columns:1
@@ -188,6 +195,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + za4.text
                 }
         GridLayout{            
             columns:2
@@ -215,6 +223,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + tm1.text
                 }
         GridLayout{            
             columns:2
@@ -242,6 +251,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + tm2.text
                 }
         GridLayout{            
             columns:2
@@ -269,6 +279,7 @@ RowLayout{
                     font_size: 20
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    onClicked: modulname.text = "Modul neve: " + tm3.text
                 }
         GridLayout{            
             columns:2

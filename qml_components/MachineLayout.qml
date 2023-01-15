@@ -9,7 +9,7 @@ ColumnLayout{
     id: machine_layout
     anchors.horizontalCenter: parent.horizontalCenter
 
-    state: ""
+    state: "kerressixty"
 
     states: [
         State{
@@ -57,21 +57,21 @@ ColumnLayout{
             Layout.rightMargin: 100
             text: "Kerres 60"
             font_size: 40
-            onClicked: machine_layout.state = "kerressixty"
+            onClicked: machine_layout.state = "kerressixty", machinename.text = "Gép neve: " + one.text
             }
         TextButton{
             id: two
             Layout.rightMargin: 100
             text: "Kerres 61"
             font_size: 40
-            onClicked: machine_layout.state = "kerressixtyone"
+            onClicked: machine_layout.state = "kerressixtyone",machinename.text = "Gép neve: " + two.text
             }
         TextButton{
             id: three
             Layout.rightMargin: 100
             text: "Kerres 62"
             font_size: 40
-            onClicked: machine_layout.state = "kerressixtytwo"
+            onClicked: machine_layout.state = "kerressixtytwo", machinename.text = "Gép neve: " + three.text
             }
     }
 
