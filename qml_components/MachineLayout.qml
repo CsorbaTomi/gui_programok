@@ -9,7 +9,7 @@ ColumnLayout{
     id: machine_layout
     anchors.horizontalCenter: parent.horizontalCenter
 
-    state: "kerressixty"
+    state: "alap"
 
     states: [
         State{
